@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="lds-ring" class="lds-ring nodisplay"><div></div><div></div><div></div><div></div></div>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <!-- Logo and name of the company -->
+        <div class="logo">
+            <ion-icon name="fast-food"></ion-icon>
+            <h1>Foodie</h1>
+        </div>
+        <!-- List of navigation links -->
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="favourites.html">Favourites</a>
+            </li>
+        </ul>
+        <!-- Search option -->
+        <div class="searchName">
+            <input type="text" id="name" name="name" placeholder="Search">
+            <button id='search' class="search">
+                Search
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section to display dish with dieshes -->
+    <section id="instructions">
+
+    </section>
+
+
+    <!-- Main section containg the cover image and the headings and cta -->
+    <section id="main" class="main display">
+        <div class="content">
+            <div>
+                <h2>Be a Foddie</h2>
+                <p>Search Dishes by Ingridients and enjoy being a Foodie</p>
+            </div>
+            <div class="cta">
+                <input type="text" name='cta' id="cta" placeholder="Search By Ingridients">
+                <button id="searchIngridient"> Search </button>
+            </div>
+        </div>
+        <img src="chef.png" alt="chef">
+    </section>
+
+    <!-- Making the dishes section to add dishes in it. -->
+    <section id="dishesList">
+        
+    </section>
+
+    <!-- Scripts to use ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- function js -->
+    <script src="function.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <!-- Logo and name of the company -->
+        <div class="logo">
+            <ion-icon name="fast-food"></ion-icon>
+            <h1>Foodie</h1>
+        </div>
+        <!-- List of navigation links -->
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="favourites.html">Favourites</a>
+            </li>
+        </ul>
+        <!-- Search option -->
+        <div class="searchName">
+            <input type="text" id="name" name="name" placeholder="Search">
+            <button id='search' class="search">
+                Search
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section to display dish with dieshes -->
+    <section id="instructions">
+
+    </section>
+    <section id="Favourites"></section>
+
+    <!-- Scripts to use ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- favourite js -->
+    <script src="favourite.js"></script>
+</body>
+</html>

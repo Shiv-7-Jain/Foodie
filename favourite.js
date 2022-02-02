@@ -1,5 +1,10 @@
 let favDishes = localStorage.getItem('FavDishes');
-favDishes = favDishes.split(',');
+try {
+    favDishes = favDishes.split(',');
+}
+catch(err){
+    console.log(err);
+}
 const Favourites = document.getElementById('Favourites');
 const container = document.createElement('div');
 container.setAttribute('id','currentFav');

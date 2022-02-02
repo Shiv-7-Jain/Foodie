@@ -56,17 +56,15 @@ function displayDishes() {
         const heart = document.createElement('ion-icon');
         let favDish = localStorage.getItem('FavDishes');
         heart.setAttribute('name','heart-outline');
-        try{
+        if(favDish){
             favDish = favDish.split(',');
-        }catch(err){
-            console.log(err);
-        }
-        
-        favDish.map((dish) => {
-            if(dish == result.meals[i].strMeal){
-                heart.setAttribute('name','heart');
-            }
-        });
+            favDish.map((dish) => {
+                if(dish == result.meals[i].strMeal){
+                    heart.setAttribute('name','heart');
+                }
+            });
+        };
+       
         heart.setAttribute('id','favourite'+i);
 
         // Adding the name and heart to the div

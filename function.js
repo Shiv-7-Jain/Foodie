@@ -41,6 +41,7 @@ function displayDishes() {
     }, 4000);
     const dishes = document.createElement('div');
     dishes.setAttribute('id','dishes');
+    console.log(result);
     for(let i = 0;i < result.meals.length;i++){
         // Setting the image of the dishes
         const img = document.createElement('img');
